@@ -32,9 +32,9 @@ Sets DPI to 150% with auto logoff from the system.
 > Switch-Dpi (100, 150) 
 ```
 Switches DPI: 
-a) to 150% if the current DPI is 100%; 
-b) to 100% if the current DPI is 150%; 
-c) to 100% if the current DPI is not 100% or 150%. 
+- to 150% if the current DPI is 100%; 
+- to 100% if the current DPI is 150%; 
+- to 100% if the current DPI is not 100% or 150%. 
 
 
  
