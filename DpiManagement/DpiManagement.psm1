@@ -1,16 +1,16 @@
-﻿<#
+<#
 .Synopsis
     Gets current screen DPI in percents. 
 #>
 function Get-Dpi {
     Get-DpiRegistryPath | Set-Location
     $val = Get-ItemProperty -Path . -Name "LogPixels"
-    $val.LogPixels
+    $val.LogPixels | Convert-DpiPixelsToPercentage
 }
 
 <#
 .Synopsis
-   Sets screen DPI (given in percents). 
+   Sets screen DPI (given in percents). By default this command doesn't logoff from the system. 
 .EXAMPLE
    Set-Dpi 150 
    Sets screen DPI to 150% without reboot.
@@ -61,7 +61,7 @@ function Switch-Dpi {
         $DpiSet 
     )
 
-    $percentage = Get-Dpi | Convert-DpiPixelsToPercentage 
+    $percentage = Get-Dpi  
     $currentDpiIndex = $DpiSet.IndexOf($percentage) 
     $nextDpiIndex = 0
     if ($currentDpiIndex -ige 0) {
