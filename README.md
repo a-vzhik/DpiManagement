@@ -14,7 +14,7 @@ $env:PSModulePath
 
 **Set-Dpi** - sets screen DPI, given in percents. By default this command doesn't logoff from the system, but you can use *-AutoReboot* switch parameter to force logoff. 
 
-**Switch-Dpi** - switches DPI in the given list one-by-one based on the current DPI. This command sets DPI with *-AutoReboot* switch, so changes are applied immidiately.   
+**Switch-Dpi** - switches DPI in the given list one-by-one based on the current DPI. This command sets DPI with *-AutoReboot* switch, so changes are applied immediately.   
 
 **Convert-DpiPixelsToPercentage** - converts DPI measured in pixels to DPI measured in percents.
 
