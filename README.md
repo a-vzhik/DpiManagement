@@ -16,7 +16,7 @@ $env:PSModulePath
 
 *Switch-Dpi* - switches DPI in the given list one-by-one based on the current DPI. This command sets DPI with *-AutoReboot* switch, so changes are applied immidiately.   
 
-#Examples
+# Examples
 
 ```
 > Get-Dpi
