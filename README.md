@@ -1,2 +1,20 @@
-# DpiManagement
-PowerShell module for desktop DPI management
+# Overview
+DpiManagement is a PowerShell module for desktop DPI management. 
+All commands operate with DPI measured in percents
+All commands are documented and completed with examples. 
+
+# Installation 
+You need to download DpiManagement folder to any module path specified by the environment variable:  
+```
+$env:PSModulePath
+```
+
+# Commands
+*Get-Dpi* - gets the current DPI in percents.
+*Set-Dpi* - sets the DPI, given in percents. By default this command doesn't logoff from the system.
+*Switch-Dpi* - switches DPI from the given set one-by-one based on the current DPI. 
+
+
+
+
+ 
