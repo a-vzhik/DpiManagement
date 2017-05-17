@@ -10,15 +10,15 @@ $env:PSModulePath
 ```
 
 # Commands
-*Get-Dpi* - gets the current DPI in percents.
+**Get-Dpi** - gets the current DPI in percents.
 
-*Set-Dpi* - sets the DPI, given in percents. By default this command doesn't logoff from the system, but you can use *-AutoReboot* switch parameter to force logoff. 
+**Set-Dpi** - sets the DPI, given in percents. By default this command doesn't logoff from the system, but you can use *-AutoReboot* switch parameter to force logoff. 
 
-*Switch-Dpi* - switches DPI in the given list one-by-one based on the current DPI. This command sets DPI with *-AutoReboot* switch, so changes are applied immidiately.   
+**Switch-Dpi** - switches DPI in the given list one-by-one based on the current DPI. This command sets DPI with *-AutoReboot* switch, so changes are applied immidiately.   
 
-*Convert-DpiPixelsToPercentage* - converts DPI measured in pixels to DPI measured in percents.
+**Convert-DpiPixelsToPercentage** - converts DPI measured in pixels to DPI measured in percents.
 
-*Convert-DpiPercentageToPixels* - converts DPI measured in percents to DPI measured in pixels.
+**Convert-DpiPercentageToPixels** - converts DPI measured in percents to DPI measured in pixels.
 
 # Examples
 
