@@ -58,21 +58,22 @@ function Set-Dpi {
 function Switch-Dpi {
     param (
         [int[]]
-        $DpiSet 
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+        $DpiList 
     )
 
     $percentage = Get-Dpi  
-    $currentDpiIndex = $DpiSet.IndexOf($percentage) 
+    $currentDpiIndex = $DpiList.IndexOf($percentage) 
     $nextDpiIndex = 0
     if ($currentDpiIndex -ige 0) {
         $nextDpiIndex = $currentDpiIndex + 1
     }
 
-    if ($nextDpiIndex -ige $DpiSet.Count) {
+    if ($nextDpiIndex -ige $DpiList.Count) {
        $nextDpiIndex = 0 
     }
 
-    $nextDpi = $DpiSet[$nextDpiIndex]
+    $nextDpi = $DpiList[$nextDpiIndex]
     Write-Host $nextDpi
     Set-Dpi $nextDpi -AutoReboot
 }
@@ -119,5 +120,3 @@ function Convert-DpiPixelsToPercentage {
     )
     [int][System.Math]::Round($Pixels * 100 / 96);
 }
-
-
