@@ -16,6 +16,10 @@ $env:PSModulePath
 
 *Switch-Dpi* - switches DPI in the given list one-by-one based on the current DPI. This command sets DPI with *-AutoReboot* switch, so changes are applied immidiately.   
 
+*Convert-DpiPixelsToPercentage* - converts DPI measured in pixels to DPI measured in percents.
+
+*Convert-DpiPercentageToPixels* - converts DPI measured in percents to DPI measured in pixels.
+
 # Examples
 
 ```
