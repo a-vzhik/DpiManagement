@@ -1,6 +1,6 @@
 # Overview
 DpiManagement is a PowerShell module for desktop DPI management. 
-All commands operate with DPI measured in percents
+All commands operate with DPI measured in percents.
 All commands are documented and completed with examples. 
 
 # Installation 
